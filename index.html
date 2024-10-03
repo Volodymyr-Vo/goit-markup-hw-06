@@ -58,18 +58,101 @@
             </li>
           </ul>
         </address>
+
+        <button class="solid_menu-btn" type="button">
+          <svg class="solid_menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!--------------------mobile menu---------------------->
+
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="mobile-icon-close icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="nav-list-mobile">
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href=""> Portfolio</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li>
+                <a
+                  class="mobile-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="">
+                <svg class="" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="">
+                <svg class="" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="">
+                <svg class="" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="">
+                <svg class="" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--------------------contacts-menu-nav---------------------->
 
     <!--------------------page-main---------------------->
     <main class="page-main">
-      <section class="sectio-order page-main-section">
+      <section class="sectio-order page-main-section hidden">
         <div class="container main-container">
           <h1 class="page-main-section-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="page-main-section-button" type="button">
+          <button
+            class="page-main-section-button"
+            type="button"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
@@ -77,7 +160,7 @@
       <!--------------------page-main---------------------->
 
       <!--------------------section-features---------------------->
-      <section class="class-features">
+      <section class="class-features hidden">
         <div class="container">
           <h2 class="class-list-feature"></h2>
           <ul class="feature-list">
@@ -135,7 +218,7 @@
       <!--------------------section-features---------------------->
 
       <!--------------------section-second---------------------->
-      <section class="section-second">
+      <section class="section-second hidden">
         <div class="container container-section-second">
           <h2 class="page-main-section-second">Our Team</h2>
           <ul class="page-main-second-list">
@@ -313,7 +396,7 @@
       <!--------------------section-second---------------------->
 
       <!--------------------portfolio---------------------->
-      <section class="section-three">
+      <section class="section-three hidden">
         <div class="container container-our-portfolio">
           <h2 class="section-portfolio">Our Portfolio</h2>
           <ul class="class-portfolio-list">
@@ -439,7 +522,7 @@
     <!--------------------portfolio---------------------->
 
     <!--------------------section-footer----------------->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container container-footer">
         <div class="footer-logo-container">
           <a class="logo footer-logo" href="./index.html"
@@ -508,9 +591,9 @@
     <!--------------------section-footer----------------->
 
     <!--------------------modal----------------->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden" data-modal>
       <div class="modal">
-        <button class="close-black-button" type="button">
+        <button class="close-black-button" type="button" data-modal-close>
           <svg class="close-button-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -582,5 +665,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/moda.js" type="module"></script>
   </body>
 </html>
