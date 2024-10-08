@@ -530,6 +530,9 @@ button {
   .feature-item {
     width: calc((100% - 24px) / 2);
   }
+  .list-feature-name {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -567,7 +570,7 @@ button {
 
 /* section-second */
 
-.container-section-second {
+.section-second {
   background-color: #f4f4fd;
   padding: 96px 0;
   margin-left: auto;
@@ -1132,7 +1135,8 @@ button {
 }
 
 .modal-form {
-  display: flex;
+  width: 256px;
+  height: 40px;
   align-items: flex-start;
   flex-direction: column;
 }
