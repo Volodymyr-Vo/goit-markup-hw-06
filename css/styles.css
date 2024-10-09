@@ -493,8 +493,7 @@ button {
 }
 
 .class-features {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 96px 0;
 }
 
 .feature-list {
@@ -526,6 +525,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
+    padding: 0 96px;
   }
   .feature-item {
     width: calc((100% - 24px) / 2);
@@ -536,6 +536,9 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .class-features {
+    padding: 120px 0;
+  }
   .feature-list {
     flex-wrap: nowrap;
   }
@@ -572,8 +575,7 @@ button {
 
 .section-second {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 96px 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -680,6 +682,7 @@ button {
 @media screen and (min-width: 1158px) {
   .section-second {
     background: #f4f4fd;
+    padding: 120px 0;
   }
   .page-main-second-list {
     display: flex;
@@ -981,7 +984,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .container-footer {
-    padding: 0 108px;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -1054,7 +1056,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 320px;
+  width: 288px;
   min-height: 640px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
