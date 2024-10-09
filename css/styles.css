@@ -463,9 +463,9 @@ button {
 
 @media screen and (min-width: 1158px) {
   .sectio-order {
+    padding-top: 188px;
+    padding-bottom: 188px;
     max-width: 1440px;
-    max-height: 600px;
-
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -493,8 +493,8 @@ button {
 }
 
 .class-features {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .feature-list {
@@ -572,7 +572,8 @@ button {
 
 .section-second {
   background-color: #f4f4fd;
-  padding: 96px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -665,7 +666,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .container-section-second {
-    padding: 96px 108px;
+    padding: 0 108px;
   }
   .page-main-second-list {
     flex-direction: row;
@@ -678,13 +679,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .section-second {
-    max-width: 1440px;
-    height: 100%;
     background: #f4f4fd;
-    padding-left: 156px;
-    padding-right: 156px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .page-main-second-list {
     display: flex;
@@ -705,10 +700,6 @@ button {
 .section-three {
   padding-top: 96px;
   padding-bottom: 96px;
-}
-
-.container-our-portfolio {
-  margin-bottom: 96px;
 }
 
 .section-portfolio {
@@ -989,10 +980,8 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .page-footer {
-    padding-left: 108px;
-  }
   .container-footer {
+    padding: 0 108px;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -1018,6 +1007,7 @@ button {
     max-width: 1158px;
     display: flex;
     text-align: start;
+    gap: 0;
   }
   .footer-logo-container {
     margin-right: 120px;
